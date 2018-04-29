@@ -15,3 +15,8 @@ dconf write /org/gnome/shell/favorite-apps "['firefox.desktop', 'org.gnome.Nauti
 dconf write /org/gnome/desktop/interface/gtk-theme "'Adapta-Eta'"
 dconf write /org/gnome/desktop/interface/icon-theme "'Numix-Circle'"
 dconf write /org/gnome/shell/extensions/user-theme/name "'Adapta'"
+
+# Load QT styles
+rm -rf ~/.config/Kvantum ~/.config/qt5ct
+$copy $BACKUP/.config/Kvantum ~/.config
+$copy $BACKUP/.config/qt5ct ~/.config
