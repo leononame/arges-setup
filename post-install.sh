@@ -20,6 +20,6 @@ echo "Installing rsync"
 $inst rsync
 
 #source backup/data.sh
-source backup/config.sh
+#source backup/config.sh
 
-
+source packages/install.sh
