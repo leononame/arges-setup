@@ -4,22 +4,13 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
-# Set variables
-localuser=leo
-backupfolder=/run/media/leo/briareos/zeus/data.0/b.0/$localuser
-homefolder=/home/$localuser
-HOME=$homefolder
-BACKUP=$backupfolder
-
-# Set commands
-inst='pacman --needed --noconfirm -S'
-copy='rsync -ahAXHS'
+# Source variables
+source vars.sh
 
 # Install stuff that's needed before doing anything
 echo "Installing rsync"
 $inst rsync
 
-#source backup/data.sh
-#source backup/config.sh
-
+source backup/data.sh
+source backup/config.sh
 source packages/install.sh
