@@ -44,3 +44,8 @@ $copy $BACKUP/.config/calibre ~/.config
 echo "raccoon"
 rm -rf ~/.Raccoon
 $copy $BACKUP/.Raccoon ~
+
+# Gnucash
+echo "fnucash"
+rm -rf ~/.local/share/gnucash
+$copy $BACKUP/.local/share/gnucash ~/.local/share
