@@ -9,5 +9,9 @@ echo -e "\n\n########## Install AUR packages"
 #aurman --needed --noconfirm -S raccoon gnucash-git spotify jetbrains-toolbox steam steam-native-runtime
 
 # Install ui stuff
-echo -e "\n\n########## Post installation script"
-./ui.sh
+echo -e "\n\n########## UI"
+#./ui.sh
+
+# Settings
+echo -e "\n\n########## Settings"
+sudo ./settings.sh
