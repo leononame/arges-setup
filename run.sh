@@ -14,4 +14,18 @@ echo -e "\n\n########## UI"
 
 # Settings
 echo -e "\n\n########## Settings"
-sudo ./settings.sh
+#sudo ./settings.sh
+
+# Add input sources
+dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'us'), ('xkb', 'de'), ('xkb', 'es')]"
+# Date/Time and number format
+dconf write /system/locale/region "'es_ES.UTF-8'"
+
+# Extension settings
+#Enable extensions
+#dconf write /org/gnome/shell/enabled-extensions ''
+# Dash to Dock
+dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height 'true'
+dconf write /org/gnome/shell/extensions/dash-to-dock/custom-theme-shrink 'true'
+dconf write /org/gnome/shell/extensions/dash-to-dock/intellihide 'false'
+
