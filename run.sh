@@ -26,3 +26,7 @@ source ui.sh
 # Settings
 echo -e "\n\n########## Settings"
 source settings.sh
+
+# LightDM
+echo -e "\n\n########## LightDM preparation"
+source lightdm/lightdm.sh
