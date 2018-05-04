@@ -1,3 +1,5 @@
+#!/usr/bin/zsh
+
 chsh -s /usr/bin/zsh
 git clone --recursive git@github.com:LeoReentry/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 cd ~/.zprezto

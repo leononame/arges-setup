@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # Install pacman packages
-
-echo -e "\n\n"
-echo "########## Installation"
-echo -e "Official packages\n"
-$inst - < packages/pkglist
+echo "Official packages"
+sudo -E $inst - < packages/pkglist >>$log
 
 # Install aurman
-echo -e "\n\naurman\n"
-runuser $localuser packages/aurman.sh
+echo "aurman"
+packages/aurman.sh >>$log
 
 # Install zprezto
-echo -e "\n\nzprezto\n"
-runuser $localuser -s /usr/bin/zsh packages/zprezto.sh
+echo "zprezto"
+/usr/bin/zsh packages/zprezto.sh >>$log
 
+# AUR packages
+echo "AUR"
+$aurinst - < packages/aurlist >>$log

@@ -9,4 +9,5 @@ BACKUP=$backupfolder
 
 # Set commands
 inst='pacman --needed --noconfirm -S'
+aurinst='aurman --needed --noconfirm -S'
 copy='rsync -ahAXHS'

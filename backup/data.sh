@@ -1,10 +1,8 @@
 #!/bin/bash
 
-
 ### Backup Data
 
-echo -e "\n\n"
-echo "########## Restore Data"
+echo "#### Restore Data"
 # Remove all none hidden folders from home
 echo "Removing home folders..."
 cd ~
