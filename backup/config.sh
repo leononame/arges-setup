@@ -46,6 +46,11 @@ rm -rf ~/.Raccoon
 $copy $BACKUP/.Raccoon ~
 
 # Gnucash
-echo "fnucash"
+echo "gnucash"
 rm -rf ~/.local/share/gnucash
 $copy $BACKUP/.local/share/gnucash ~/.local/share
+
+# Electrum
+echo "electrum"
+rm -rf ~/.electrum
+$copy $BACKUP/.electrum ~
