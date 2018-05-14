@@ -10,6 +10,7 @@ jre10-openjdk-headless
 jre9-openjdk
 jre9-openjdk-headless
 keepassxc
+lsof
 openjdk10-doc
 openjdk10-src
 openjdk9-doc
