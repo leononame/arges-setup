@@ -1,8 +1,10 @@
+android-tools
 calibre
 darktable
 electrum
 git-annex
 gparted
+hugo
 jdk10-openjdk
 jdk9-openjdk
 jre10-openjdk
@@ -10,12 +12,15 @@ jre10-openjdk-headless
 jre9-openjdk
 jre9-openjdk-headless
 keepassxc
+libbluray libaacs
 lsof
 openjdk10-doc
 openjdk10-src
 openjdk9-doc
 openjdk9-src
 rsync
+thunderbird
+unison
 vim
 virtualbox
 virtualbox-guest-iso
