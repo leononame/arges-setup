@@ -9,11 +9,13 @@ jre10-openjdk-headless
 jre9-openjdk
 jre9-openjdk-headless
 keepassxc
+lyx
 openjdk10-doc
 openjdk10-src
 openjdk9-doc
 openjdk9-src
 rsync
+texlive-most
 vim
 virtualbox
 virtualbox-guest-iso
