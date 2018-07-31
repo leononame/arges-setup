@@ -26,3 +26,4 @@ cp dconf/local/* ~/.config/dconf/user.d
 
 echo "Compile configuration"
 sudo dconf compile /etc/dconf/db/local /etc/dconf/db/local.d
+dconf compile ~/.config/dconf/user ~/.config/dconf/user.d
