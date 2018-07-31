@@ -14,4 +14,4 @@ echo "zprezto"
 
 # AUR packages
 echo "AUR"
-$aurinst - < packages/aurlist >>$log
+$aurinst angular-cli autofirma git-remote-gcrypt gnucash-git google-chrome jetbrains-toolbox raccoon spotify steam steam-native-runtime sublime-text-dev >>$log
