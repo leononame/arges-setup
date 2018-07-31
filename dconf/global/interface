@@ -1,6 +1,0 @@
-[org/gnome/desktop/interface]
-gtk-theme='Adapta-Eta'
-icon-theme='Numix-Circle'
-
-[org/gnome/shell/extensions/user-theme]
-name='Adapta'
