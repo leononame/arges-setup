@@ -3,22 +3,19 @@ calibre
 darktable
 electrum
 git-annex
+go
 gparted
 hugo
 jdk10-openjdk
-jdk9-openjdk
 jre10-openjdk
 jre10-openjdk-headless
-jre9-openjdk
-jre9-openjdk-headless
 keepassxc
-libbluray libaacs
+libbluray
+libaacs
 lsof
 lyx
 openjdk10-doc
 openjdk10-src
-openjdk9-doc
-openjdk9-src
 rsync
 texlive-most
 thunderbird
