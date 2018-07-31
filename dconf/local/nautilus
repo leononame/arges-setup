@@ -4,3 +4,6 @@ default-visible-columns=['name', 'size', 'type', 'owner', 'group', 'permissions'
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='list-view'
+
+[org/gnome/shell]
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'gnucash.desktop', 'spotify.desktop', 'org.gnome.Terminal.desktop', 'darktable.desktop']

@@ -18,6 +18,11 @@ echo "Generating locale..."
 sudo locale-gen
 
 echo "Copy configuration"
-cp -arf dconf/. /
+sudo mkdir -p /etc/dconf/db/local.d
+sudo mkdir -p /etc/dconf/profile
+mkdir -p ~/.config/dconf/user.d
+sudo cp -r dconf/global/* /etc/dconf/db/local.d
+cp dconf/local/* ~/.config/dconf/user.d
+
 echo "Compile configuration"
 sudo dconf compile /etc/dconf/db/local /etc/dconf/db/local.d

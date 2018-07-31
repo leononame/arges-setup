@@ -1,5 +1,6 @@
 [org/gnome/desktop/input-sources]
 sources=[('xkb', 'eu')]
+show-all-sources=true
 
 [system/locale]
 region='es_ES.UTF-8'
