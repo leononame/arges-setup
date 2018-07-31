@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Disable tracker
+echo "Disable tracker"
 tracker daemon -t
 cd ~/.config/autostart
 cp -v /etc/xdg/autostart/tracker-* ./
@@ -18,15 +19,7 @@ echo "Generating locale..."
 # Generate locales
 sudo locale-gen
 
-# Add input sources
-dconf write /org/gnome/desktop/input-sources/sources "[('xkb', 'us'), ('xkb', 'de'), ('xkb', 'es')]"
-# Date/Time and number format
-dconf write /system/locale/region "'es_ES.UTF-8'"
-
-
-echo "Disable automount"
-sudo mkdir -p /etc/dconf/profile
-sudo mkdir -p /etc/dconf/db/local.d
-sudo -E cp files/user /etc/dconf/profile/
-sudo -E cp files/00-disable-automount /etc/dconf/db/local.d/
-
+echo "Copy configuration"
+cp -arf dconf/. /
+echo "Compile configuration"
+sudo dconf compile /etc/dconf/db/local /etc/dconf/db/local.d
