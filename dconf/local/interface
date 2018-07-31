@@ -1,0 +1,9 @@
+[org/gnome/desktop/interface]
+gtk-theme='Adapta-Eta'
+icon-theme='Numix-Circle'
+
+[org/gnome/shell/extensions/user-theme]
+name='Adapta'
+
+[org/gnome/shell]
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'gnucash.desktop', 'spotify.desktop', 'org.gnome.Terminal.desktop', 'darktable.desktop']
