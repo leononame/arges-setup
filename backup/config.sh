@@ -53,3 +53,8 @@ $copy $BACKUP/.local/share/gnucash ~/.local/share >> $log
 echo "electrum"
 rm -rf ~/.electrum
 $copy $BACKUP/.electrum ~ >> $log
+
+# Unison
+echo "unison"
+rm -rf ~/.unison
+$copy $BACKUP/.unison ~ >> $log
