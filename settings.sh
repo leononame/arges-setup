@@ -3,10 +3,12 @@
 # Disable tracker
 echo "Disable tracker"
 tracker daemon -t
+pushd ./
 cd ~/.config/autostart
 cp -v /etc/xdg/autostart/tracker-* ./
 for FILE in `ls tracker-*`; do echo Hidden=true >> $FILE; done
 rm -rf ~/.cache/tracker ~/.local/share/tracker
+popd
 
 # Backup locale
 sudo cp /etc/locale.gen /etc/locale.gen.old
@@ -23,7 +25,9 @@ sudo mkdir -p /etc/dconf/profile
 mkdir -p ~/.config/dconf/user.d
 sudo cp -r dconf/global/* /etc/dconf/db/local.d
 cp dconf/local/* ~/.config/dconf/user.d
+sudo cp dconf/user /etc/dconf/profile
 
 echo "Compile configuration"
 sudo dconf compile /etc/dconf/db/local /etc/dconf/db/local.d
 dconf compile ~/.config/dconf/user ~/.config/dconf/user.d
+
