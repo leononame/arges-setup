@@ -17,4 +17,10 @@ echo "zprezto"
 
 # AUR packages
 echo "AUR"
-$aurinst angular-cli autofirma git-remote-gcrypt gnucash-git google-chrome jetbrains-toolbox raccoon spotify steam steam-native-runtime sublime-text-dev >>$log
+$aurinst gnucash-git
+$aurinst google-chrome
+$aurinst jetbrains-toolbox
+$aurinst raccoon
+$aurinst spotify
+$aurinst sublime-text-dev
+# $aurinst steam steam-native-runtime
