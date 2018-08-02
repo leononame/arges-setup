@@ -17,4 +17,4 @@ $copy $BACKUP/.config/qt5ct ~/.config >> $log
 
 echo "Installing GNOME extensions"
 # Install extensions
-$aurinst gnome-shell-extension-no-title-bar-git gnome-shell-extension-audio-output-switcher-git gnome-shell-extension-topicons-plus-git gnome-shell-extension-workspace-grid-git >> $log
+$aurinst gnome-shell-extension-no-title-bar-git gnome-shell-extension-audio-output-switcher-git gnome-shell-extension-topicons-plus-git gnome-shell-extension-workspace-grid-git
