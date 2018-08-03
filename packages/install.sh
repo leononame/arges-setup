@@ -17,7 +17,6 @@ echo "zprezto"
 
 # AUR packages
 echo "AUR"
-$aurinst gnucash-git
 $aurinst google-chrome
 $aurinst jetbrains-toolbox
 $aurinst raccoon
