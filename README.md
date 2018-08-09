@@ -11,6 +11,4 @@ Currently missing extensions:
 # TODOS
 
 * Gnome config as single folder
-* Port to ubuntu
-* Copy ssh config to /etc/ssh/ssh_config
 * Make symlinks to bash scripts
